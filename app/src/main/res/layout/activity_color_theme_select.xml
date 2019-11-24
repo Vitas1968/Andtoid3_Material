@@ -6,4 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".ColorThemeSelect">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/indigo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary1"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryText1"
+            android:text="@string/indigo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/green_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary2"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryText2"
+            android:text="@string/green" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/purple_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary3"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryText3"
+            android:text="@string/purple" />
+
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
