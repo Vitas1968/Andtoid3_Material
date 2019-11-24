@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentPhoto1">
 
+    <fragment
+        android:id="@+id/fragmentPhoto1"
+        android:name="com.geek.andtoid3_material.fragments.FragmentPhoto1"
+        android:label="fragment_photo1"
+        tools:layout="@layout/fragment_photo1" />
+    <fragment
+        android:id="@+id/fragmentPhoto2"
+        android:name="com.geek.andtoid3_material.fragments.FragmentPhoto2"
+        android:label="fragment_fragment_photo2"
+        tools:layout="@layout/fragment_fragment_photo2" />
+    <fragment
+        android:id="@+id/fragmentPhoto3"
+        android:name="com.geek.andtoid3_material.fragments.FragmentPhoto3"
+        android:label="fragment_fragment_photo3"
+        tools:layout="@layout/fragment_fragment_photo3" />
 </navigation>
