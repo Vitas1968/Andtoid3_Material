@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/bottom_sheet"
+    android:layout_height="400dp"
+    android:background="@android:color/darker_gray"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/holo_blue_bright"
+        android:hint="Name"
+        android:id="@+id/tv_name"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimaryDark"
+        android:hint="Phone"
+        android:id="@+id/tv_phone"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/holo_blue_bright"
+        android:hint="Adress"
+        android:id="@+id/tv_adress"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimaryDark"
+        android:hint="E-mail"
+        android:id="@+id/tv_email"/>
 </LinearLayout>
