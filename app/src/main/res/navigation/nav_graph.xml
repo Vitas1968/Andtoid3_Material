@@ -9,12 +9,20 @@
         android:id="@+id/fragmentPhoto1"
         android:name="com.geek.andtoid3_material.fragments.FragmentPhoto1"
         android:label="fragment_photo1"
-        tools:layout="@layout/fragment_photo1" />
+        tools:layout="@layout/fragment_photo1" >
+        <action
+            android:id="@+id/action_fragmentPhoto1_to_fragmentPhoto2"
+            app:destination="@id/fragmentPhoto2" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentPhoto2"
         android:name="com.geek.andtoid3_material.fragments.FragmentPhoto2"
         android:label="fragment_fragment_photo2"
-        tools:layout="@layout/fragment_fragment_photo2" />
+        tools:layout="@layout/fragment_fragment_photo2" >
+        <argument
+            android:name="myName"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentPhoto3"
         android:name="com.geek.andtoid3_material.fragments.FragmentPhoto3"
