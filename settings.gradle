@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':a3l3designmodule'
 rootProject.name='Andtoid3_Material'
