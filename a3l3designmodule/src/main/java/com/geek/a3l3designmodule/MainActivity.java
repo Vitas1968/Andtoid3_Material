@@ -1,7 +1,6 @@
 package com.geek.a3l3designmodule;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
