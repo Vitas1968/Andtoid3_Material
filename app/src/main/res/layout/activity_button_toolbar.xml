@@ -1,58 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BottomSheetActivity">
+    tools:context=".ButtonToolbarActivity">
+   <include layout="@layout/tool_bar_layout"/>
 
-    <TextView
-        android:id="@+id/show_name"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-
-        android:layout_marginTop="50dp"
-        android:gravity="center_horizontal"
-        android:text="Hello"
-        android:textSize="45sp"
-
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:text="Button1"
+        android:textColor="@color/colorPrimaryText1"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="@color/colorPrimary1"
-        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="center_vertical"
-            android:hint="Name"
-            android:id="@+id/tv_name"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="center_vertical"
-            android:hint="Phone"
-            android:id="@+id/tv_phone"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="center_vertical"
-            android:hint="Adress"
-            android:id="@+id/tv_adress"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="center_vertical"
-            android:hint="E-mail"
-            android:id="@+id/tv_email"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/border_for_button"
+        android:text="Button2"
+        android:textColor="@color/colorPrimaryText1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    </LinearLayout>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <Button
+        android:id="@+id/button3"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="Button3"
+        android:textColor="@color/colorPrimaryText1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+    <Button
+        android:id="@+id/button4"
+        android:backgroundTint="@color/colorPrimaryLight1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Button4"
+        android:textColor="@color/colorPrimaryText1"
+        android:textSize="20sp"
+
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_priority_high_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
