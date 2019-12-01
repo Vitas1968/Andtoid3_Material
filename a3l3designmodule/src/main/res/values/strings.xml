@@ -3,4 +3,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_login">Enter login</string>
+    <string name="close">Close</string>
+    <string name="come_in">Come in</string>
 </resources>
