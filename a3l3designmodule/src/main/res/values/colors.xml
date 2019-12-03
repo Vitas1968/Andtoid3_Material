@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9C27B0</color>
+    <color name="colorPrimaryDark">#7B1FA2</color>
+    <color name="colorAccent">#FFEB3B</color>
+
+    <color name="textColorPrimary">#442C2E</color>
+    <color name="textInputOutlineColor">#FBB8AC</color>
+
+    <color name="colorPrimary1">#3F51B5</color>
+    <color name="colorPrimaryDark1">#303F9F</color>
+    <color name="colorPrimaryLight1">#C5CAE9</color>
+    <color name="textIcons1">#FFFFFF</color>
+    <color name="colorAccent1">#FF5252</color>
+    <color name="colorPrimaryText1">#212121</color>
+    <color name="colorSecondaryText1">#757575</color>
+    <color name="colorDivider1">#BDBDBD</color>
+
+    <color name="colorPrimary2">#4CAF50</color>
+    <color name="colorPrimaryDark2">#388E3C</color>
+    <color name="colorPrimaryLight2">#C8E6C9</color>
+    <color name="textIcons2">#FFFFFF</color>
+    <color name="colorAccent2">#E040FB</color>
+    <color name="colorPrimaryText2">#212121</color>
+    <color name="colorSecondaryText2">#757575</color>
+    <color name="colorDivider2">#BDBDBD</color>
+
+    <color name="colorPrimary3">#9C27B0</color>
+    <color name="colorPrimaryDark3">#7B1FA2</color>
+    <color name="colorPrimaryLight3">#E1BEE7</color>
+    <color name="textIcons3">#FFFFFF</color>
+    <color name="colorAccent3">#FFEB3B</color>
+    <color name="colorPrimaryText3">#212121</color>
+    <color name="colorSecondaryText3">#757575</color>
+    <color name="colorDivider3">#BDBDBD</color>
+</resources>
