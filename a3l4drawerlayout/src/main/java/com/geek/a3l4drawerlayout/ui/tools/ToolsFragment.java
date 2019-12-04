@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -13,6 +14,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.geek.a3l4drawerlayout.R;
+import com.squareup.picasso.Picasso;
 
 public class ToolsFragment extends Fragment {
 
@@ -28,6 +30,13 @@ public class ToolsFragment extends Fragment {
                 textView.setText(s);
             }
         });
+        loadImageWithPicasso(root);
         return root;
+    }
+    private void loadImageWithPicasso(View view) {
+
+        ImageView imageView=view.findViewById(R.id.imgView_tools);
+
+        Picasso.get().load("https://cdn.pixabay.com/photo/2017/11/19/16/16/boar-2963161__340.jpg").into(imageView);
     }
 }

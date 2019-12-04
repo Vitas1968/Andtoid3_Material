@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -13,6 +14,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.geek.a3l4drawerlayout.R;
+import com.squareup.picasso.Picasso;
 
 public class GalleryFragment extends Fragment {
 
@@ -28,6 +30,14 @@ public class GalleryFragment extends Fragment {
                 textView.setText(s);
             }
         });
+        loadImageWithPicasso(root);
         return root;
+    }
+
+    private void loadImageWithPicasso(View view) {
+
+        ImageView imageView=view.findViewById(R.id.imgView);
+        //Picasso.get().load("https://i.imgur.com/DvpvklR.png").into(imageView);
+        Picasso.get().load("https://img4.goodfon.ru/wallpaper/nbig/2/49/dikii-kaban-kabanchik-malysh-mordy.jpg").into(imageView);
     }
 }
