@@ -24,10 +24,17 @@ public class GalleryFragment extends Fragment {
         galleryViewModel = ViewModelProviders.of(this).get(GalleryViewModel.class);
         View root = inflater.inflate(R.layout.fragment_gallery, container, false);
         final TextView textView = root.findViewById(R.id.text_gallery);
+        final TextView boarDescTextView = root.findViewById(R.id.boar_description);
         galleryViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
+            }
+        });
+        galleryViewModel.getBoarDescriptiot().observe(this, new Observer<String>() {
+            @Override
+            public void onChanged(@Nullable String s) {
+                boarDescTextView.setText(s);
             }
         });
         loadImageWithPicasso(root);
