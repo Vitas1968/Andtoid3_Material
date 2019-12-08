@@ -29,10 +29,10 @@ public class FabBehavior extends FloatingActionButton.Behavior {
         //child -> Floating Action Button
         if (dyConsumed > 0) {
             CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams) fab.getLayoutParams();
-            int fab_bottomMargin = layoutParams.bottomMargin;
-            fab.animate().translationY(fab.getHeight() + fab_bottomMargin).setInterpolator(new LinearInterpolator()).start();
+            int fab_rightMargin = layoutParams.rightMargin;
+            fab.animate().translationX(fab.getWidth() + fab_rightMargin).setInterpolator(new LinearInterpolator()).start();
         } else if (dyConsumed < 0) {
-            fab.animate().translationY(0).setInterpolator(new LinearInterpolator()).start();
+            fab.animate().translationX(0).setInterpolator(new LinearInterpolator()).start();
         }
 
     }
