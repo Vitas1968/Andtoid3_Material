@@ -1,36 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="300dp"
     android:layout_height="wrap_content"
-    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_gravity="center_horizontal"
     app:cardBackgroundColor="@android:color/transparent"
-    card_view:cardCornerRadius="16dp"
-    card_view:cardElevation="8dp"
-    app:cardPreventCornerOverlap="true">
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
         android:padding="8dp">
 
         <ImageView
             android:id="@+id/imgViewFamily"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
             tools:src="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/member_desript"
+            android:id="@+id/member_desсript"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            tools:hint="Описание члена семьи"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            tools:hint="Описание члена семьи" />
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>
