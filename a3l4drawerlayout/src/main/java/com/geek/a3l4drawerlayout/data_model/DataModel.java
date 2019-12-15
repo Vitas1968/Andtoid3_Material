@@ -7,14 +7,17 @@ import java.util.ArrayList;
 public class DataModel {
     private ArrayList<String> listMemberFamily;
     private ArrayList<Integer> listImgMemberFamily;
+    private ArrayList<Integer> listAgeMemberFamily;
     private ArrayList<ArrayList> listResult;
 
     public DataModel() {
         this.listMemberFamily = new ArrayList<>();
         this.listImgMemberFamily = new ArrayList<>();
+        this.listAgeMemberFamily = new ArrayList<>();
         this.listResult = new ArrayList<>();
         initlistMemberFamily();
         initlistImgMemberFamily();
+        initlistAgeMemberFamily();
     }
 
     private ArrayList initlistMemberFamily() {
@@ -36,10 +39,20 @@ public class DataModel {
         listImgMemberFamily.add(R.drawable.pig_mini);
         return listImgMemberFamily;
     }
+    private ArrayList initlistAgeMemberFamily() {
+        listAgeMemberFamily.add(6);
+        listAgeMemberFamily.add(5);
+        listAgeMemberFamily.add(2);
+        listAgeMemberFamily.add(5);
+        listAgeMemberFamily.add(4);
+        listAgeMemberFamily.add(1);
+        return listAgeMemberFamily;
+    }
 
     private ArrayList resultList() {
         listResult.add(listMemberFamily);
         listResult.add(listImgMemberFamily);
+        listResult.add(listAgeMemberFamily);
         return listResult;
     }
 
