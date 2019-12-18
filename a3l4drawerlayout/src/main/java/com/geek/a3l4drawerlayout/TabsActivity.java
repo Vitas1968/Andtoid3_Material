@@ -21,11 +21,6 @@ public class TabsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tabs);
         Bundle bundle=getIntent().getBundleExtra("args");
-/*
-        String tmpStr = bundle.getString("descriptArgs");
-        int tmpImg = bundle.getInt("imgArgs");
-        int tmpAge = bundle.getInt("ageArgs");
- */
 
         ImgFragment imgFrag=ImgFragment.newInstance(bundle);
         DescriptFragment descrFrag=DescriptFragment.newInstance(bundle);
