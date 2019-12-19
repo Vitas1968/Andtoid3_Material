@@ -8,15 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.geek.a3l4drawerlayout.R;
 import com.geek.a3l4drawerlayout.TabsActivity;
-
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -51,18 +48,13 @@ public class RecyclerBoarAdapter extends RecyclerView.Adapter<RecyclerBoarAdapte
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // вызываем активити для табса и передаем туда данные
                 Intent intent=new Intent( fragment.getActivity(),TabsActivity.class);
                 Bundle bundle=new Bundle();
                 bundle.putString("descriptArgs",listMemberFamily.get(pos));
                 bundle.putInt("imgArgs",listImgMemberFamily.get(pos));
                 bundle.putInt("ageArgs",listAgeMemberFamily.get(pos));
                 intent.putExtra("args",bundle);
-                //intent.putExtra("imgArgs",listImgMemberFamily.get(pos));
-                //intent.putExtra("descriptArgs",listMemberFamily.get(pos));
-               // intent.putExtra("ageArgs",listAgeMemberFamily.get(pos));
                 Objects.requireNonNull(fragment.getActivity()).startActivity(intent);
-                // надо ещё адаптер написать
             }
         });
     }
@@ -83,6 +75,5 @@ public class RecyclerBoarAdapter extends RecyclerView.Adapter<RecyclerBoarAdapte
             imageMember = itemView.findViewById(R.id.imgViewFamily);
             descriptMember = itemView.findViewById(R.id.member_desсript);
         }
-
     }
 }
