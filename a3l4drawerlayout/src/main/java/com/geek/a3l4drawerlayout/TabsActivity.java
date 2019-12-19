@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import com.geek.a3l4drawerlayout.tabs_fragments.AgeFragment;
@@ -14,11 +16,18 @@ import com.geek.a3l4drawerlayout.tabs_fragments.TabsAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 public class TabsActivity extends AppCompatActivity {
+    public static final String APP_PREFERENCES = "mysettings";
+    public static final String APP_PREFERENCES_CURRENT_THEME_ID = "currentThemeId";
+    private SharedPreferences settings;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        settings=getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE);
+        if(settings.contains(APP_PREFERENCES_CURRENT_THEME_ID)&& (settings.getInt(APP_PREFERENCES_CURRENT_THEME_ID,-1))!=-1 ) {
+            setTheme(settings.getInt(APP_PREFERENCES_CURRENT_THEME_ID,-1));
+        }
         setContentView(R.layout.activity_tabs);
         Bundle bundle=getIntent().getBundleExtra("args");
 
